@@ -1,0 +1,22 @@
+Eagle website source and deployment backup
+
+Included deployed code and assets:
+- /root/xyzcs_front
+- /root/eagle_node
+- /root/build_tools
+- /var/www/eagle_php
+
+Included runtime configuration:
+- /etc/nginx
+- /etc/php/8.3/fpm
+- /etc/systemd/system/xy-replica.service
+- /etc/systemd/system/xy-replica.service.d
+- /etc/systemd/system/eagle-build-worker.service
+- /root/adb_keys/pjt_key.pem, when present
+
+Included consistent database snapshot:
+- database-snapshots/xyzcs_replica.db  <- /root/xyzcs_replica.db
+
+Not included:
+- /etc/letsencrypt TLS private-key material
+- service logs and temporary files outside the paths above
